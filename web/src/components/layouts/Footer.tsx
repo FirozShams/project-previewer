@@ -29,8 +29,8 @@ export default function Footer() {
             </Box>
             <Box>
                 <Typography variant="subtitle2">
-                    Source code: <Link color="inherit" href="https://github.com/FirozShams">
-                    https://github.com/FirozShams
+                    Source code: <Link color="inherit" href="https://github.com/FirozShams/project-previewer">
+                    https://github.com/FirozShams/project-previewer
                     </Link>
                 </Typography>
             </Box>
