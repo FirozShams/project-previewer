@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: ./api/Dockerfile
+    image: github_project_viewer_server
+    container_name: github_project_viewer_server
+    restart: unless-stopped
+    ports:
+      - "3001:3000"
+    command: npm run start:debug
+    volumes:
+      - ./api/:/app/
+  frontend:
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile
+    image: github_project_viewer_web
+    container_name: github_project_viewer_web
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    command: npm run start
+    volumes:
+      - ./web/:/app/
