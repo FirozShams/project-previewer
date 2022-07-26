@@ -1,6 +1,6 @@
-const APP_URL = 'http://127.0.0.1:3000';
-const API_BASE_URL = 'http://127.0.0.1:3001';
-const CLIENT_ID = 'Iv1.9cbc404901bc225d';
+const APP_URL = process.env.APP_URL;
+const API_BASE_URL = process.env.API_BASE_URL;
+const CLIENT_ID = process.env.CLIENT_ID;
 
 export const ENDPOINTS = {
     USER_AUTHENICATE: `${API_BASE_URL}/users/authenticate`,
