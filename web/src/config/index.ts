@@ -1,5 +1,5 @@
-const API_BASE_URL = process.env.API_BASE_URL;
-const CLIENT_ID = process.env.CLIENT_ID;
+const API_BASE_URL = 'https://git-preview-api.herokuapp.com';
+const CLIENT_ID = 'Iv1.9cbc404901bc225d';
 
 export const ENDPOINTS = {
     USER_AUTHENICATE: `${API_BASE_URL}/users/authenticate`,
